@@ -1,0 +1,51 @@
+<import src="../starts/starts.wxml" />
+<view class="container">
+  <image src="{{detail.img}}" class="head-img" mode="aspectFill"></image>
+  <view class="head-img-hover">
+    <text class="title">{{detail.title}}</text>
+    <text class="year">{{detail.country+"/"+detail.year}}</text>
+    <view class="comment">
+      <text class="like">{{detail.wishcount}}</text>
+      <text>人喜欢</text>
+      <text class="like">{{detail.commentcount}}</text>
+      <text>想看</text>
+    </view>
+    <image src="{{detail.img}}" class="content-img"></image>
+  </view>
+  <view class="content-container">
+    <text class="content-title">{{detail.title}}</text>
+    <view class="grades-container">
+      <text class="star">评分:</text>
+      <template is="stars-template" data="{{stars:detail.stars,average:detail.score}}" />
+    </view>
+    <view class="grades-container">
+      <text class="star">导演:</text>
+      <text>{{detail.director}}</text>
+    </view>
+    <view class="grades-container">
+      <text class="star">演员:</text>
+      <block wx:for="{{detail.star}}">
+        <text class="starname">{{item.starname}}</text>
+      </block>
+    </view>
+    <view class="grades-container">
+      <text class="star">类型:</text>
+      <text>{{detail.geners}}</text>
+    </view>
+  </view>
+  <view class="summary-container">
+    <text class="summary_title">剧情简介</text>
+    <text class="summary_text">{{detail.summary}}</text>
+  </view>
+  <view>
+    <text class="star_title">影人</text>
+    <scroll-view class="casts" scroll-x="true">
+      <block wx:for="{{detail.star}}">
+        <view class="star-container">
+          <image class="star-img" src="{{item.starimg}}"></image>
+          <text>{{item.starname}}</text>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

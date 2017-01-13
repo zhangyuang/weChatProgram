@@ -1,0 +1,17 @@
+<import src="movie-list/movie-list.wxml" />
+<import src="movie-grid/movie-grid.wxml" />
+<view class="search">
+    <icon type="search" class="searchicon" size="13" color="#405f80"></icon>
+    <input type="text" placeholder="你的名字" placeholder-class="placeholder" bindfocus="onSearch" bindchange="onSearchChange"/>
+    <image src="/images/icon/xx.png" class="closesearch" catchtap="onCloseSearch" wx-if="{{searchshow}}"></image>
+</view>
+<view class="movie-container" wx-if="{{containershow}}">
+  <template is="movie-list" data = "{{...nowmovie}}"/>
+  <template is="movie-list" data = "{{...willmovie}}"/>
+  <template is="movie-list" data = "{{...top250}}"/>
+</view>
+<view class="search-container" wx-if="{{searchshow}}">
+  <block>
+    <template is="movie-grid" data = "{{...searchResult}}"/>
+  </block>
+</view>

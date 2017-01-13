@@ -1,0 +1,7 @@
+<view class="container">
+<image class ="user_avater" src="/images/lzs.jpg"></image>
+<text class ="user_name">Hello,张宇昂</text>
+    <view class="moto-container" catchtap="onTap">
+        <text class="msg">开启微信小程序之旅</text>
+    </view>
+</view>

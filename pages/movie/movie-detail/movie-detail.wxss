@@ -1,0 +1,118 @@
+@import "../starts/starts.wxss";
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.head-img {
+    width: 100%;
+    height: 320rpx;
+    filter: blur(20px);
+}
+.head-img-hover {
+    width: 100%;
+    height: 320rpx;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    font-size: 19px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50rpx;
+    margin-left: 40rpx;
+    letter-spacing: 2px;
+}
+.year {
+    font-size: 28rpx;
+    color: #fff;
+    margin-top: 30rpx;
+    margin-left: 40rpx;
+}
+.comment {
+    margin-top: 30rpx;
+}
+.comment text {
+    font-size: 28rpx;
+    margin-left: 40rpx;
+}
+.like {
+    color: red;
+}
+.content-img {
+    width: 175rpx;
+    height: 238rpx;
+    position: absolute;
+    top: 160rpx;
+    right: 30rpx;
+}
+.content-title {
+    margin-top: 30rpx;
+    margin-left: 40rpx;
+    font-size: 28rpx;
+    color: black;
+}
+.content-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 26rpx;
+    border-bottom: 1px solid #666;
+}
+.grades-container {
+    display: flex;
+    margin-top:30rpx;
+}
+.grades-container view {
+    margin-left: 10rpx;
+}
+.content-container view text {
+    margin-left: 20rpx;
+    margin-bottom: 15rpx;
+}
+.starname {
+    margin-left: 20rpx;
+    line-height: 40rpx;
+}
+.summary-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 26rpx;
+    border-bottom: 1px solid #666;
+}
+.summary_title {
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-bottom: 30rpx;
+}
+.summary_text {
+    margin-left: 20rpx;
+    line-height: 30rpx;
+    letter-spacing: 5rpx;
+}
+.star_title {
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-bottom: 30rpx;
+    font-size: 26rpx;
+}
+.casts {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.star-container {
+    display: inline-flex;
+    flex-direction: column;
+    white-space: nowrap;
+    margin: 20rpx 20rpx;
+    text-align: center;
+}
+.star-container image{
+    width: 170rpx;
+    height: 210rpx;
+    margin-bottom: 15rpx;
+}
+.star-container text {
+    font-size: 26rpx;
+}

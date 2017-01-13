@@ -1,0 +1,16 @@
+/* pages/movie/movie-content/movie-content.wxss */
+@import "../starts/starts.wxss";
+.movie-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 22rpx;
+}
+.movie-img {
+   width: 202rpx;
+   height: 270rpx; 
+   margin-bottom: 16rpx;
+}
+.movie-title {
+    font-size: 24rpx;
+    margin-bottom: 16rpx;
+}

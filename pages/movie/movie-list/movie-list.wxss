@@ -1,0 +1,25 @@
+/* pages/movie/movie-list/movie-list.wxss */
+@import "../movie-content/movie-content.wxss";
+.list-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 30rpx;
+}
+.list-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx 22rpx 22rpx;
+}
+.list-head text {
+    font-size: 24rpx;
+    line-height: 49rpx;
+}
+.more {
+    line-height: 49rpx;
+    color: blue;
+}
+.list-body {
+    display: flex;
+
+}

@@ -1,0 +1,19 @@
+/* pages/movie/starts/starts.wxss */
+.stars-container {
+    display: flex;
+}
+.stars-img-container {
+    display: flex;
+    height: 17rpx;
+    margin-right: 24rpx;
+}
+.stars-img-container image {
+    width: 17rpx;
+    height: 17rpx;
+    padding: 3rpx;
+    margin-top: 6rpx;
+}
+.star-text {
+    font-size: 24rpx;
+    margin-top: 6rpx;
+}

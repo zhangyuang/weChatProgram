@@ -1,0 +1,29 @@
+@import "movie-list/movie-list.wxss";
+@import "movie-grid/movie-grid.wxss"
+.search {
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+    height: 80rpx;
+   
+}
+.movie-container {
+    background-color: #f2f2f2;
+}
+.searchicon {
+    margin: auto 0 auto 20rpx;
+}
+input {
+    height: 100%;
+    width: 600rpx;
+    font-size: 28rpx;
+    margin-left: 20px; 
+}
+.search-container {
+    margin-top: 80rpx;
+}
+.closesearch {
+    width: 30rpx;
+    height: 30rpx;
+    margin: auto 0 auto 20rpx;
+}

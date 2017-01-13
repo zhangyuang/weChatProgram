@@ -1,0 +1,9 @@
+/* pages/movie/movie-grid/movie-grid.wxss */
+@import "../movie-content/movie-content.wxss";
+.grid-scroll {
+    height: 1300rpx;
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
